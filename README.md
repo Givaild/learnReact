@@ -1,2 +1,2 @@
 # learnReact
-Front em reack para conectar com api do projeto learnNode
+Front em react para conectar com api do projeto learnNode
