@@ -1,6 +1,6 @@
-import "./App.css";
+import "./style.css";
 
-function App() {
+function Home() {
   return (
     <div>
       <h1>Olá React</h1>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
