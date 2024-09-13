@@ -27,13 +27,13 @@ function Home() {
       <div className="container">
         <form>
           <h1>Cadastro de Usuários</h1>
-          <input name="name " type="text" />
-          <input name="age" type="number" />
-          <input name="email" type="email" />
+          <input placeholder="Nome" name="name " type="text" />
+          <input placeholder="Idade" name="age" type="number" />
+          <input placeholder="Email" name="email" type="email" />
           <button type="button">Cadastrar</button>
         </form>
         {users.map((user) => (
-          <div key={user.id}>
+          <div key={user.id} className="card">
             <div>
               <p>Nome:{user.name}</p>
               <p>Idade:{user.age}</p>
