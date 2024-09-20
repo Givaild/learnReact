@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import "./style.css";
 import Trash from "../../assets/trash-2.svg";
 import api from "../../services/api";
+import { useEffect } from "react";
 
 function Home() {
   let users = [];
@@ -9,7 +9,10 @@ function Home() {
   async function getUsers() {
     users = await api.get("/users");
   }
-  useEffect();
+
+  useEffect(() => {
+    getUsers;
+  }, []);
 
   return (
     <div>
